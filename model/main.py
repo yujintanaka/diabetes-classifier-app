@@ -55,7 +55,7 @@ def create_model(data):
     print('Accuracy of Model: ', accuracy_score(y_test, y_pred))
     print('Classification Report: \n', classification_report(y_test,y_pred))    
 
-    return model, scaler
+    return rfc, scaler
 
 
 def main():

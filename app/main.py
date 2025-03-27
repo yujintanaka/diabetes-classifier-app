@@ -27,7 +27,7 @@ def add_prediction(input_dict, data):
         else:
             st.write("<span class='diagnosis diabetes'>Diabetic or Prediabetic</span>", unsafe_allow_html=True)
     with col2:
-        st.page_link("https://github.com/yujintanaka/streamlit-diabetes-classifier", label="About the model", icon="🔗")
+        st.page_link("https://github.com/yujintanaka/diabetes-classifier-app", label="About the model", icon="🔗")
     progress_df = pd.DataFrame({"proba":[model.predict_proba(scaled_input)[0][1]]})
     st.data_editor(
         progress_df,
@@ -45,6 +45,7 @@ def add_prediction(input_dict, data):
     return input_data
 
 def add_survey():
+    # This function adds the survey questions
     slider_labels = [
         ('BMI',[10,50],'What is your BMI?'),
         ('MentHlth',[0,30],'Thinking about your mental health, which includes stress, depression, and problems with emotions, for how many '
