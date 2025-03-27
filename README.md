@@ -14,13 +14,13 @@ This app predicts the likelihood of diabetes in individuals based on a 20 questi
 ---
 
 ## Dataset
+The dataset and survey comes from a simplified version of The Behavioral Risk Factor Surveillance System (BRFSS), a health-related telephone survey that is collected annually by the CDC.
 The dataset used for this project was sourced from [Kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset), containing features such as:
 - Age
 - Blood Pressure
 - BMI
 - Smoker
 - Physical Activity
-The dataset and survey comes from a simplified version of The Behavioral Risk Factor Surveillance System (BRFSS), a health-related telephone survey that is collected annually by the CDC.
 
 ### Target variable:
 - **Outcome**: 0 for non-diabetic, 1 for diabetic or pre-diabetic.
